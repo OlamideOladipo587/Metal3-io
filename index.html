@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOD BANK MANAGEMENT SYSTEM</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- icons link -->
+    	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/6c1b22244e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+<section id="home-page">
+    <header>
+    <nav>
+        <img class="logo" src="images/metal-logo2.png" alt="">
+        <div class="menu">
+          <a href="#" class="is-active nav-links" >Home</a>
+          <a href="http://metal3.io/try-it.html" class="nav-links">Trt It!</a>
+          <a href="#" class="nav-links">Components</a>
+          <a href="http://metal3.io/documentation.html" class="nav-links">Documentation</a>
+          <a href="http://metal3.io/try-it.html" class="get-started">Get Started</a>
+        </div>
+        <button class="hamburger">
+          <span class="material-icons">menu </span>
+        </button>
+    </nav>
+    <div class="mobile-menu">
+      <a href="#">Home</a>
+      <a href="donate.html" target="_blank">Donate Blood</a>
+      <a href="contact.html" target="_blank">Contact Us</a>
+      <a href="login.html" target="_blank">Sign In</a>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="metal-heading">Metal<sup>3</sup></p>
+        <p class="metal-subheading">Metal3-io is an open-source project that simplifies the deployment and management of bare metal infrastructure using Kubernetes.</p>
+        <a class="blog blog-btn" href="http://metal3.io/blog/index.html"><i class="fa-brands fa-microblog"></i>  Blog</a>
+        <a class="user-guide guide-btn" href="https://book.metal3.io/introduction.html">
+                  Our User Guide</a>
+      </div>
+      <div class="col-lg-6 newsletter-div">
+        <p class="newsletter-text">Want to get updates from us? Signup for our newsletter</p>
+        <form class="" method="post">
+          <input type="email" name="" value="" placeholder="Enter your email" required>
+          <button class="newsletter-btn"type="submit" name="button">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+  </section>
+  </section>
+
+  <section id="about-us">
+    <p class="aboutus-heading">About Us</p>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="1000" data-pause="hover">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p class="about-text">Metal<sup>3</sup>-io pronounced: Metal Kubed is an open-source project that simplifies the deployment and management of bare metal infrastructure using Kubernetes.
+            The framework uses the Kubernetes API server to manage the lifecycle of bare metal hosts, enabling users to manage both virtual machines and bare metal hosts using a unified interface.
+          </p>
+          <button type="button" class="btn about-btns">
+            <a class="nav-link" href="http://metal3.io/try-it.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </button>
+        </div>
+        <div class="carousel-item">
+          <p class="about-subheaddings">Our Mission</p>
+          <p class="about-text">The Metal<sup>3</sup>-io project mission is to provide a Kubernetes-native way of managing bare metal infrastructure, making it as easy as managing virtualized infrastructure.</p>
+          <button type="button" class="btn about-btns">
+            <a class="nav-link" href="https://book.metal3.io/introduction.html">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </button>
+        </div>
+        <div class="carousel-item">
+          <p class="about-subheaddings">Our Community</p>
+          <p class="about-text">The Metal<sup>3</sup>-io project is maintained by a diverse community of contributors from various organizations and is part of the Open Infrastructure Foundation.
+            Help build the future of Metal3.io</p>
+            <button type="button" class="btn about-btns">
+              <a class="nav-link" href="http://metal3.io/community-resources.html">Conect with us <i class="fa-solid fa-arrow-right"></i></a>
+            </button>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+
+  <!-- COMPONENTS SECTION -->
+
+  <section id="components">
+    <p class="component-heading">Metal<sup>3</sup> Components</p>
+    <div class="row container">
+      <div class="col-lg-4 ovarall">
+          <div class="box" style="--clr:#89ec5b;">
+            <div class="content">
+              <div class="icon"><i class="fa-solid fa-1"></i></div>
+              <div class="text">
+                <h3>Bare Metal Actuator</h3>
+                <p>This responds to modifications made to Machine objects and uses Bare Metal Host custom resources as a client. </p>
+                <a href="http://metal3.io/documentation.html">Read More</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-4 ovarall">
+        <div class="box box2" style="--clr:#5b98eb;">
+          <div class="content">
+            <div class="icon"><i class="fa-solid fa-2"></i></div>
+            <div class="text">
+              <h3>Bare Metal Operator</h3>
+              <p>The Bare Metal Operator implements a Kubernetes API for controlling bare metal hosts and keeps track of the available hosts.</p>
+              <a href="http://metal3.io/documentation.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 ovarall">
+        <div class="box box3" style="--clr:#eb5ae5;">
+          <div class="content">
+            <div class="icon"><i class="fa-solid fa-3"></i></div>
+            <div class="text">
+              <h3>Bare Metal Management Pods</h3>
+              <p>It manages the host's power consumption, status, and image provisioning using a suite of tools. </p>
+              <a href="http://metal3.io/documentation.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <section id="footer">
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="cloud-native-img"src="images/footer-img.png" alt="">
+      </div>
+      <div class="col-lg-6 second-footer-div">
+        <p><a href="https://metal3.io/privacy-statement.html">Privacy Statement</a></p>
+        <p><a href="https://www.linuxfoundation.org/legal/trademark-usage"> Linux Foundation Trademark</a></p>
+        <p><a href="https://www.cncf.io/">Cloud Native Computing Foundation</a></p>
+      </div>
+    </div>
+    <div class="icons">
+      <a href="https://twitter.com/metal3_io"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://kubernetes.slack.com/?redir=%2Fmessages%2FCHD49TLE7"><i class="fa-brands fa-slack"></i></a>
+      <a href="https://github.com/metal3-io"><i class="fa-brands fa-github"></i></a>
+      <a href="https://groups.google.com/g/metal3-dev?pli=1"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.youtube.com/channel/UC_xneeYbo-Dl4g-U78xW15g/videos"><i class="fa-brands fa-youtube"></i></a>
+      <p class="copyright">© 2023 Metal<sup>3</sup>-io Copyright | All Rights Reserved</p>
+    </div>
+  </section>
+
+
+    <!-- bootstrap script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+  </body>
+</html>
